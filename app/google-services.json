@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_id": "launchpadlima16",
+    "project_number": "798800612842",
+    "name": "LaunchpadLima16"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798800612842:android:35db44a30c143eae",
+        "client_id": "android:com.horses.launchpad.lima16",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.horses.launchpad.lima16",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798800612842-5t44lb2epaaqf09vdf1ov9v9kq0rr882.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.horses.launchpad.lima16",
+            "certificate_hash": "CFDDEDC7FAA97254FB02C88939EE2B4DD2D87842"
+          }
+        },
+        {
+          "client_id": "798800612842-u6slrl0v1r4or6s8cqd2r1ntjedau1v2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

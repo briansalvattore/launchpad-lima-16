@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="divider">#B6B6B6</color>
+    <color name="gray">#fafafa</color>
+
+    <color name="blue">#4585f4</color>
+    <color name="green">#0f9d58</color>
+    <color name="yellow">#f4b400</color>
+    <color name="red">#db4437</color>
+
+    <array name="colors">
+        <item>@color/blue</item>
+        <item>@color/green</item>
+        <item>@color/yellow</item>
+        <item>@color/red</item>
+    </array>
+
+</resources>

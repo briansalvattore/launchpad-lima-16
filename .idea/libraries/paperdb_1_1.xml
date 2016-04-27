@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="paperdb-1.1">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/io.paperdb/paperdb/1.1/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/io.paperdb/paperdb/1.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.paperdb/paperdb/1.1/7d261bf82cb0cd0c6f586a4a1ab4bedb9ba4752/paperdb-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

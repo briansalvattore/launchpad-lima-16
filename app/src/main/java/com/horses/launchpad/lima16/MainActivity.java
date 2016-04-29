@@ -2,7 +2,9 @@ package com.horses.launchpad.lima16;
 
 import android.graphics.Color;
 import android.graphics.PorterDuff;
-import android.support.v7.app.ActionBar;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -22,10 +24,11 @@ import java.util.List;
 
 import butterknife.BindColor;
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import fr.castorflex.android.smoothprogressbar.SmoothProgressBar;
 import io.paperdb.Paper;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar)
     protected Toolbar toolbar;
@@ -51,13 +54,13 @@ public class MainActivity extends BaseActivity {
     private Firebase firebase;
 
     @Override
-    protected int getView() {
-        return R.layout.activity_main;
-    }
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-    @Override
-    protected void onCreate() {
+        ButterKnife.bind(this);
 
+        /** Firebase reference */
         firebase = new Firebase("https://launchpad-lima.firebaseio.com/").child("room").child("horses");
 
         setSupportActionBar(toolbar);
@@ -91,6 +94,7 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        /** Puts item in list */
         firebase.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -136,6 +140,7 @@ public class MainActivity extends BaseActivity {
         messageEntity.setDate(calendar.getTime());
         messageEntity.setMessage(message.getText().toString());
 
+        /** Send item to firebase */
         firebase.push().setValue(messageEntity);
         message.setText("");
     };

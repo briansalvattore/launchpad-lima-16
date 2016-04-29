@@ -20,9 +20,10 @@ public class MainApp extends Application {
     public void onCreate() {
         super.onCreate();
 
+        /** Firebase initialized */
         Firebase.setAndroidContext(this);
-        Paper.init(this);
 
+        Paper.init(this);
         initImageLoader(this);
     }
 
